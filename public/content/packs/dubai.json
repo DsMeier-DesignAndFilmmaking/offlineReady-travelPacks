@@ -1,0 +1,66 @@
+{
+  "slug": "dubai",
+  "city": "Dubai",
+  "country": "United Arab Emirates",
+  "rank": 7,
+  "internationalArrivalsMillions": 18.2,
+  "version": "2026.02.19",
+  "updatedAt": "2026-02-19",
+  "hero": {
+    "title": "Dubai Field Pack",
+    "subtitle": "Built for hub-transfer velocity, fare-system variation, and climate-aware field execution."
+  },
+  "painPoints": [
+    "High-speed airport transfer decisions",
+    "Heat stress in outdoor windows",
+    "Long-distance district jumps"
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "title": "Arrival and Entry",
+      "summary": "Define customs-to-transport sequence and fallback pickup logic before landing.",
+      "actions": [
+        "Pin terminal exit meeting point.",
+        "Store legal ride options and support contacts.",
+        "Apply first-day schedule with heat-safe buffers."
+      ]
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Route Resilience",
+      "summary": "Use metro and targeted taxi connectors to reduce transfer uncertainty.",
+      "actions": [
+        "Group activities by corridor instead of district name alone.",
+        "Avoid back-and-forth moves across the city in one block.",
+        "Preserve one indoor fallback venue per day segment."
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Payments and Connectivity",
+      "summary": "Prioritize digital-first payment reliability with one physical backup lane.",
+      "actions": [
+        "Enable roaming and wallet rails before departure.",
+        "Store QR and booking confirmations offline.",
+        "Keep one low-volatility cash reserve for edge cases."
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Disruption Playbook",
+      "summary": "If delays occur, collapse itinerary into high-certainty blocks with short connectors.",
+      "actions": [
+        "Re-center around nearest metro-access location.",
+        "Cut low-priority cross-city movement.",
+        "Advance airport return window for outbound flights."
+      ]
+    }
+  ],
+  "emergency": [
+    { "label": "Emergency", "value": "999" },
+    { "label": "Ambulance", "value": "998" },
+    { "label": "Police (Non-Urgent)", "value": "901" }
+  ],
+  "offlineResources": ["/content/packs/dubai.json"]
+}

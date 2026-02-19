@@ -1,0 +1,66 @@
+{
+  "slug": "macau",
+  "city": "Macau",
+  "country": "China (SAR)",
+  "rank": 8,
+  "internationalArrivalsMillions": 18.0,
+  "version": "2026.02.19",
+  "updatedAt": "2026-02-19",
+  "hero": {
+    "title": "Macau Field Pack",
+    "subtitle": "Optimized for compact-territory movement, terminal crossings, and event surge windows."
+  },
+  "painPoints": [
+    "Border and terminal queue variability",
+    "Event-driven traffic spikes",
+    "Cross-district timing compression"
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "title": "Arrival and Entry",
+      "summary": "Treat entry timing as variable and protect downstream reservations with buffer.",
+      "actions": [
+        "Predefine post-arrival route for ferry, bridge, or airport mode.",
+        "Store accommodation address in two language formats.",
+        "Set contingency check-in communication template."
+      ]
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Route Resilience",
+      "summary": "Use compact geography to your advantage by running short, reversible route loops.",
+      "actions": [
+        "Prioritize clustered activities by district.",
+        "Avoid committing to non-reversible late-night transfers.",
+        "Track one pedestrian-safe fallback in each zone."
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Payments and Connectivity",
+      "summary": "Keep at least two payment instruments active for terminal and hospitality contexts.",
+      "actions": [
+        "Maintain a card-plus-cash fallback pair.",
+        "Cache confirmation IDs for lodging and transportation.",
+        "Verify mobile data continuity before high-demand windows."
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Disruption Playbook",
+      "summary": "If one route stalls, switch sequence and preserve final checkpoint certainty.",
+      "actions": [
+        "Reorder visits by nearest reachable area.",
+        "Protect ferry or departure terminal timing first.",
+        "Send one consolidated ETA update to any hosts."
+      ]
+    }
+  ],
+  "emergency": [
+    { "label": "Emergency", "value": "999" },
+    { "label": "Police", "value": "993" },
+    { "label": "Ambulance", "value": "999" }
+  ],
+  "offlineResources": ["/content/packs/macau.json"]
+}

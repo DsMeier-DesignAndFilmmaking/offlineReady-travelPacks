@@ -1,0 +1,66 @@
+{
+  "slug": "kuala-lumpur",
+  "city": "Kuala Lumpur",
+  "country": "Malaysia",
+  "rank": 10,
+  "internationalArrivalsMillions": 16.5,
+  "version": "2026.02.19",
+  "updatedAt": "2026-02-19",
+  "hero": {
+    "title": "Kuala Lumpur Field Pack",
+    "subtitle": "Built for monsoon-aware routing, airport express planning, and lane-level traffic shifts."
+  },
+  "painPoints": [
+    "Monsoon-time mobility disruptions",
+    "Airport transfer time expansion",
+    "Heavy corridor traffic during peak periods"
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "title": "Arrival and Entry",
+      "summary": "Pre-choose airport transfer mode based on arrival time and weather status.",
+      "actions": [
+        "Store rail and road transfer alternatives.",
+        "Save accommodation contact in offline note form.",
+        "Set rain-aware first-day timing buffer."
+      ]
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Route Resilience",
+      "summary": "Operate route plans that can collapse into shorter loops during heavy rain windows.",
+      "actions": [
+        "Group activities around connected transit nodes.",
+        "Avoid overcommitting to long crosstown chains.",
+        "Hold one indoor anchor option each half-day."
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Payments and Connectivity",
+      "summary": "Use wallet-ready digital rails plus backup card/cash mix for continuity.",
+      "actions": [
+        "Confirm mobile data plan with top-up path.",
+        "Retain small cash reserve for edge transport cases.",
+        "Archive all reservation references in one offline note."
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Disruption Playbook",
+      "summary": "In severe rain or corridor jams, prioritize certainty of return path and critical bookings.",
+      "actions": [
+        "Cancel low-value long-distance movement.",
+        "Reorder plans into nearby district blocks.",
+        "Secure airport departure corridor ahead of schedule."
+      ]
+    }
+  ],
+  "emergency": [
+    { "label": "Emergency", "value": "999" },
+    { "label": "Ambulance", "value": "999" },
+    { "label": "Tourism Hotline", "value": "1-300-88-5050" }
+  ],
+  "offlineResources": ["/content/packs/kuala-lumpur.json"]
+}

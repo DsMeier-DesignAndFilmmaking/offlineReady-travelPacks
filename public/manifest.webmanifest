@@ -1,0 +1,56 @@
+{
+  "id": "/launch",
+  "name": "Offline Ready Travel Packs",
+  "short_name": "Travel Packs",
+  "description": "City-specific travel packs designed for first-launch offline reliability.",
+  "start_url": "/launch",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f2ede4",
+  "theme_color": "#d36836",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Bangkok Pack",
+      "url": "/city/bangkok",
+      "icons": [
+        {
+          "src": "/icons/app-icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Istanbul Pack",
+      "url": "/city/istanbul",
+      "icons": [
+        {
+          "src": "/icons/app-icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "London Pack",
+      "url": "/city/london",
+      "icons": [
+        {
+          "src": "/icons/app-icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "categories": ["travel", "navigation", "lifestyle"]
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "istanbul",
+  "city": "Istanbul",
+  "country": "Turkey",
+  "rank": 2,
+  "internationalArrivalsMillions": 23.0,
+  "version": "2026.02.19",
+  "updatedAt": "2026-02-19",
+  "hero": {
+    "title": "Istanbul Field Pack",
+    "subtitle": "Built for airport scale, intercontinental transfer timing, and variable corridor congestion."
+  },
+  "painPoints": [
+    "Long airport-to-core transit windows",
+    "Bridge and tunnel bottlenecks",
+    "Neighborhood-to-neighborhood timing drift"
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "title": "Arrival and Entry",
+      "summary": "Treat arrival as a two-stage operation: terminal exit and district insertion.",
+      "actions": [
+        "Choose district before transport mode.",
+        "Save airport bus, metro, and taxi fallback options.",
+        "Preload route instructions for both European and Asian side."
+      ]
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Route Resilience",
+      "summary": "Preserve buffer around ferry and bridge-dependent moves.",
+      "actions": [
+        "Keep one non-bridge route for priority appointments.",
+        "Set transfer buffers above normal city assumptions.",
+        "Start waterfront moves earlier during weather shifts."
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Payments and Connectivity",
+      "summary": "Operate with layered payment options and track exchange spread before converting cash.",
+      "actions": [
+        "Use transparent-rate withdrawal points only.",
+        "Maintain transit-compatible top-up balance.",
+        "Store key addresses in offline map notes."
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Disruption Playbook",
+      "summary": "If one corridor fails, pivot district sequence instead of forcing original route order.",
+      "actions": [
+        "Reorder day plan by neighborhood proximity.",
+        "Prioritize indoor activities during transport slowdowns.",
+        "Stage departure with one extra transfer option."
+      ]
+    }
+  ],
+  "emergency": [
+    { "label": "Emergency", "value": "112" },
+    { "label": "Police", "value": "155" },
+    { "label": "Tourist Help", "value": "170" }
+  ],
+  "offlineResources": ["/content/packs/istanbul.json"]
+}

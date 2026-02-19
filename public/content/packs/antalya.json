@@ -1,0 +1,66 @@
+{
+  "slug": "antalya",
+  "city": "Antalya",
+  "country": "Turkey",
+  "rank": 6,
+  "internationalArrivalsMillions": 19.3,
+  "version": "2026.02.19",
+  "updatedAt": "2026-02-19",
+  "hero": {
+    "title": "Antalya Field Pack",
+    "subtitle": "Designed for seasonal surge conditions, airport pressure, and coast-to-old-town transfer planning."
+  },
+  "painPoints": [
+    "Seasonal airport queue spikes",
+    "Coastal transport bottlenecks",
+    "Heat and sun exposure during midday travel"
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "title": "Arrival and Entry",
+      "summary": "Anchor transportation and check-in timing before leaving the terminal.",
+      "actions": [
+        "Set fixed pickup point with host or transport provider.",
+        "Capture airport-to-hotel route screenshots offline.",
+        "Avoid first-day itinerary stacking after late arrivals."
+      ]
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Route Resilience",
+      "summary": "Coastline moves need buffer because routes compress during peak periods.",
+      "actions": [
+        "Plan one inland fallback route for every shoreline plan.",
+        "Reserve evening transfer blocks ahead of time.",
+        "Use shorter district loops rather than long point-to-point chains."
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Payments and Connectivity",
+      "summary": "Sustain mixed payment reliability across tourist-heavy and local vendors.",
+      "actions": [
+        "Carry split cash reserve by denomination.",
+        "Use mobile data package with clear renewal flow.",
+        "Store booking proof and support numbers locally."
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Disruption Playbook",
+      "summary": "When a route fails, preserve accommodation return certainty first.",
+      "actions": [
+        "Set hard departure thresholds before congestion builds.",
+        "Move non-critical activities to walking radius.",
+        "Escalate transport changes early, not at final hour."
+      ]
+    }
+  ],
+  "emergency": [
+    { "label": "Emergency", "value": "112" },
+    { "label": "Police", "value": "155" },
+    { "label": "Ambulance", "value": "112" }
+  ],
+  "offlineResources": ["/content/packs/antalya.json"]
+}

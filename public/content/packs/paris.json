@@ -1,0 +1,66 @@
+{
+  "slug": "paris",
+  "city": "Paris",
+  "country": "France",
+  "rank": 9,
+  "internationalArrivalsMillions": 17.4,
+  "version": "2026.02.19",
+  "updatedAt": "2026-02-19",
+  "hero": {
+    "title": "Paris Field Pack",
+    "subtitle": "Configured for strike-era rerouting, station complexity, and airport transfer reliability."
+  },
+  "painPoints": [
+    "Public transport strike volatility",
+    "Station transfer complexity",
+    "Airport commute timing uncertainty"
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "title": "Arrival and Entry",
+      "summary": "Arrival planning must include a transit and taxi backup simultaneously.",
+      "actions": [
+        "Map airport rail and road alternatives in advance.",
+        "Store address and neighborhood fallback landmarks offline.",
+        "Use arrival window buffer before first reservation."
+      ]
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Route Resilience",
+      "summary": "Use district-based routing during service disruption days.",
+      "actions": [
+        "Cluster activities by arrondissement proximity.",
+        "Set one bus or walkable substitute for critical metro segments.",
+        "Protect outbound airport transfer with extra margin."
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Payments and Connectivity",
+      "summary": "Preserve payment continuity and data access in underground or low-signal zones.",
+      "actions": [
+        "Carry one backup card and emergency cash layer.",
+        "Cache language support phrases and booking IDs.",
+        "Use low-battery map profile while commuting."
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Disruption Playbook",
+      "summary": "When labor actions or weather stack delays, simplify route count and cut transfers.",
+      "actions": [
+        "Move to fewer, denser activity blocks.",
+        "Delay optional inter-district movement.",
+        "Escalate rebooking decisions earlier in the day."
+      ]
+    }
+  ],
+  "emergency": [
+    { "label": "Emergency", "value": "112" },
+    { "label": "Police", "value": "17" },
+    { "label": "Medical", "value": "15" }
+  ],
+  "offlineResources": ["/content/packs/paris.json"]
+}

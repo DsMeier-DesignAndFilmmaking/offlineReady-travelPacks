@@ -1,0 +1,66 @@
+{
+  "slug": "hong-kong",
+  "city": "Hong Kong",
+  "country": "China (SAR)",
+  "rank": 4,
+  "internationalArrivalsMillions": 20.5,
+  "version": "2026.02.19",
+  "updatedAt": "2026-02-19",
+  "hero": {
+    "title": "Hong Kong Field Pack",
+    "subtitle": "Calibrated for vertical density, weather alerts, and time-sensitive transit changes."
+  },
+  "painPoints": [
+    "Typhoon or heavy rain disruptions",
+    "High-density transfer environments",
+    "Cross-harbor timing sensitivity"
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "title": "Arrival and Entry",
+      "summary": "Prioritize airport express logic first, then decide final segment by weather and luggage load.",
+      "actions": [
+        "Store backup route if airport rail is interrupted.",
+        "Preselect district handoff point for hotel transfer.",
+        "Cache local emergency language phrases."
+      ]
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Route Resilience",
+      "summary": "Use rail-first mobility with short road connectors where needed.",
+      "actions": [
+        "Avoid long cross-harbor plans during active weather alerts.",
+        "Run station-to-station fallback pairs for key appointments.",
+        "Keep one inland backup plan for waterfront activities."
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Payments and Connectivity",
+      "summary": "Maintain high-availability digital payments and immediate mobile data continuity.",
+      "actions": [
+        "Keep transit payment method topped up.",
+        "Use dual-SIM strategy when mission-critical navigation is needed.",
+        "Store payment fallback list by merchant category."
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Disruption Playbook",
+      "summary": "Weather-triggered schedule shifts should preserve safety radius and route certainty.",
+      "actions": [
+        "Shift to indoor plans during warning escalations.",
+        "Delay non-essential harbor crossings.",
+        "Keep accommodation return route available at all times."
+      ]
+    }
+  ],
+  "emergency": [
+    { "label": "Emergency", "value": "999" },
+    { "label": "Police Hotline", "value": "+852 2527 7177" },
+    { "label": "Ambulance", "value": "999" }
+  ],
+  "offlineResources": ["/content/packs/hong-kong.json"]
+}

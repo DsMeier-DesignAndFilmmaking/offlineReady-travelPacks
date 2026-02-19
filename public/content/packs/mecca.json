@@ -1,0 +1,66 @@
+{
+  "slug": "mecca",
+  "city": "Mecca",
+  "country": "Saudi Arabia",
+  "rank": 5,
+  "internationalArrivalsMillions": 19.3,
+  "version": "2026.02.19",
+  "updatedAt": "2026-02-19",
+  "hero": {
+    "title": "Mecca Field Pack",
+    "subtitle": "Structured for pilgrimage peaks, controlled movement flows, and heat-aware planning."
+  },
+  "painPoints": [
+    "High-density crowd movement",
+    "Time-bound ritual schedules",
+    "Heat and hydration risk windows"
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "title": "Arrival and Entry",
+      "summary": "Confirm permit and accommodation documents in offline storage before movement begins.",
+      "actions": [
+        "Store verified route from arrival point to accommodation.",
+        "Prepare language cards with key destination references.",
+        "Set contact protocol for group separation events."
+      ]
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Route Resilience",
+      "summary": "Move in defined windows and avoid unnecessary cross-zone repositioning.",
+      "actions": [
+        "Predefine regroup points and time checkpoints.",
+        "Use shaded and lower-load routes where possible.",
+        "Carry a hydration and cooldown micro-plan."
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Payments and Connectivity",
+      "summary": "Use payment redundancy and maintain phone battery stability through high-density periods.",
+      "actions": [
+        "Preserve one offline copy of booking confirmations.",
+        "Run a low-power map profile for longer field hours.",
+        "Keep one backup charging method in daily kit."
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Disruption Playbook",
+      "summary": "During crowd pressure spikes, prioritize controlled retreat and planned regrouping.",
+      "actions": [
+        "Pause movement when corridor pressure increases.",
+        "Rejoin primary path through preselected checkpoint.",
+        "Escalate to official support lanes when needed."
+      ]
+    }
+  ],
+  "emergency": [
+    { "label": "Emergency", "value": "911" },
+    { "label": "Ambulance", "value": "997" },
+    { "label": "Police", "value": "999" }
+  ],
+  "offlineResources": ["/content/packs/mecca.json"]
+}

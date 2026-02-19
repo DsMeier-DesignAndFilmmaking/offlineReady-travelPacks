@@ -1,0 +1,66 @@
+{
+  "slug": "bangkok",
+  "city": "Bangkok",
+  "country": "Thailand",
+  "rank": 1,
+  "internationalArrivalsMillions": 32.4,
+  "version": "2026.02.19",
+  "updatedAt": "2026-02-19",
+  "hero": {
+    "title": "Bangkok Field Pack",
+    "subtitle": "Designed for airport transfer friction, payment mismatch, and peak-hour mobility." 
+  },
+  "painPoints": [
+    "Airport-to-city transfer price variability",
+    "Mobile connectivity setup delays",
+    "High-heat walking exposure in midday windows"
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "title": "Arrival and Entry",
+      "summary": "Pre-commit transport mode, terminal pickup point, and backup route before landing.",
+      "actions": [
+        "Save offline address cards in Thai and English.",
+        "Capture terminal-level pickup instructions.",
+        "Set a no-negotiation transfer price ceiling before arrival."
+      ]
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Route Resilience",
+      "summary": "Use rail-first daytime routing and reserve road rides for late-night windows.",
+      "actions": [
+        "Maintain two route options for every high-value move.",
+        "Store nearest rail stations for hotel and primary attractions.",
+        "Avoid schedule compression in evening traffic blocks."
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Payments and Connectivity",
+      "summary": "Run dual payment rails and one emergency cash layer from day zero.",
+      "actions": [
+        "Split spending between digital wallet and card.",
+        "Keep a low-denomination cash reserve for transit and small vendors.",
+        "Confirm eSIM activation while airport Wi-Fi is stable."
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Disruption Playbook",
+      "summary": "When delays stack, protect sleep window first, then anchor transport for morning reset.",
+      "actions": [
+        "Set a hard cutoff time for long-distance evening transfers.",
+        "Move non-essential activities to a secondary day block.",
+        "Send one consolidated update to companions or hosts."
+      ]
+    }
+  ],
+  "emergency": [
+    { "label": "Emergency", "value": "191" },
+    { "label": "Tourist Police", "value": "1155" },
+    { "label": "Ambulance", "value": "1669" }
+  ],
+  "offlineResources": ["/content/packs/bangkok.json"]
+}

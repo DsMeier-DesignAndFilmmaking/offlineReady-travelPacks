@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-02-19",
+  "dataset": "Euromonitor International - Top 100 City Destinations Index 2024 (International Arrivals)",
+  "packs": [
+    {
+      "slug": "bangkok",
+      "city": "Bangkok",
+      "country": "Thailand",
+      "rank": 1,
+      "internationalArrivalsMillions": 32.4,
+      "mandatory": true,
+      "tagline": "Urban intensity with rapid transit and high-density neighborhoods.",
+      "accent": "#c06142"
+    },
+    {
+      "slug": "istanbul",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "rank": 2,
+      "internationalArrivalsMillions": 23.0,
+      "mandatory": true,
+      "tagline": "Two continents, heavy transfer traffic, and layered transit modes.",
+      "accent": "#8c4f34"
+    },
+    {
+      "slug": "london",
+      "city": "London",
+      "country": "United Kingdom",
+      "rank": 3,
+      "internationalArrivalsMillions": 21.7,
+      "mandatory": true,
+      "tagline": "Complex airport network with frequent weather and rail disruptions.",
+      "accent": "#345b68"
+    },
+    {
+      "slug": "hong-kong",
+      "city": "Hong Kong",
+      "country": "China (SAR)",
+      "rank": 4,
+      "internationalArrivalsMillions": 20.5,
+      "mandatory": false,
+      "tagline": "Dense vertical city with strong rail backbone and weather volatility.",
+      "accent": "#006f6a"
+    },
+    {
+      "slug": "mecca",
+      "city": "Mecca",
+      "country": "Saudi Arabia",
+      "rank": 5,
+      "internationalArrivalsMillions": 19.3,
+      "mandatory": false,
+      "tagline": "Pilgrimage concentration and strict movement patterns require precision.",
+      "accent": "#7b6a3e"
+    },
+    {
+      "slug": "antalya",
+      "city": "Antalya",
+      "country": "Turkey",
+      "rank": 6,
+      "internationalArrivalsMillions": 19.3,
+      "mandatory": false,
+      "tagline": "Seasonal surge destination with airport and shoreline mobility constraints.",
+      "accent": "#278084"
+    },
+    {
+      "slug": "dubai",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "rank": 7,
+      "internationalArrivalsMillions": 18.2,
+      "mandatory": false,
+      "tagline": "Hub city where heat, transfer windows, and fare systems shape risk.",
+      "accent": "#845237"
+    },
+    {
+      "slug": "macau",
+      "city": "Macau",
+      "country": "China (SAR)",
+      "rank": 8,
+      "internationalArrivalsMillions": 18.0,
+      "mandatory": false,
+      "tagline": "Compact territory with port crossing pressure and event-based crowds.",
+      "accent": "#7b5a9f"
+    },
+    {
+      "slug": "paris",
+      "city": "Paris",
+      "country": "France",
+      "rank": 9,
+      "internationalArrivalsMillions": 17.4,
+      "mandatory": false,
+      "tagline": "High urban load, strike risk, and fragmented station-to-airport transfers.",
+      "accent": "#4d5f8a"
+    },
+    {
+      "slug": "kuala-lumpur",
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "rank": 10,
+      "internationalArrivalsMillions": 16.5,
+      "mandatory": false,
+      "tagline": "Airport-rail axis city with monsoon sensitivity and lane-heavy traffic.",
+      "accent": "#3c7a5a"
+    }
+  ]
+}

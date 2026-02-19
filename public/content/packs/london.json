@@ -1,0 +1,66 @@
+{
+  "slug": "london",
+  "city": "London",
+  "country": "United Kingdom",
+  "rank": 3,
+  "internationalArrivalsMillions": 21.7,
+  "version": "2026.02.19",
+  "updatedAt": "2026-02-19",
+  "hero": {
+    "title": "London Field Pack",
+    "subtitle": "Optimized for multi-airport transfers, rail service interruptions, and weather volatility."
+  },
+  "painPoints": [
+    "Airport selection and transfer confusion",
+    "Rail strikes and service disruptions",
+    "Peak-hour station congestion"
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "title": "Arrival and Entry",
+      "summary": "Anchor your plan by airport and final zone before booking ground transport.",
+      "actions": [
+        "Store terminal-specific rail and coach exits.",
+        "Plan airport fallback if primary line is disrupted.",
+        "Pin first-night location in offline maps with postcode."
+      ]
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Route Resilience",
+      "summary": "Build around line-level alternatives, not only station-level alternatives.",
+      "actions": [
+        "Track at least one bus route replacement for every key train move.",
+        "Schedule intercity or airport trips outside crush periods.",
+        "Maintain walking-safe fallback for short central hops."
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Payments and Connectivity",
+      "summary": "Use contactless-first while preserving one backup card and emergency cash.",
+      "actions": [
+        "Enable transit-compatible contactless limits before departure.",
+        "Keep one secondary payment card physically separate.",
+        "Cache station Wi-Fi and hotel Wi-Fi credentials offline."
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Disruption Playbook",
+      "summary": "When weather or rail disruptions stack, shift to district clusters and shorter loops.",
+      "actions": [
+        "Group activities by adjacent neighborhoods.",
+        "Extend buffer before any airport departure.",
+        "Reduce interline transfers when alerts rise."
+      ]
+    }
+  ],
+  "emergency": [
+    { "label": "Emergency", "value": "999" },
+    { "label": "Non-Emergency Police", "value": "101" },
+    { "label": "NHS Non-Emergency", "value": "111" }
+  ],
+  "offlineResources": ["/content/packs/london.json"]
+}
