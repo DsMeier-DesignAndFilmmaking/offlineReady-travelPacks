@@ -19,12 +19,6 @@ import type { DownloadedPackMap } from './types/travelPack';
 
 declare let self: ServiceWorkerGlobalScope;
 
-declare global {
-  interface ServiceWorkerGlobalScope {
-    __WB_MANIFEST: Array<{ url: string; revision: string | null }>;
-  }
-}
-
 const PACK_CACHE_PREFIX = 'travel-pack-cache';
 const PACK_DATA_CACHE = 'travel-pack-data-v1';
 const STATIC_CACHE = 'travel-static-assets-v1';

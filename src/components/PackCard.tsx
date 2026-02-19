@@ -27,7 +27,7 @@ export const PackCard = ({ pack, isDownloaded, isActive }: PackCardProps): JSX.E
         </div>
       </div>
 
-      <Link className="btn btn--card" to={`/city/${pack.slug}`}>
+      <Link className="btn btn--card" to={`/city/${pack.slug}`} reloadDocument>
         Open Pack
       </Link>
     </article>

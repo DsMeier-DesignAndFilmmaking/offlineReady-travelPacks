@@ -1,9 +1,9 @@
 {
-  "id": "/launch",
+  "id": "/",
   "name": "Offline Ready Travel Packs",
   "short_name": "Travel Packs",
   "description": "City-specific travel packs designed for first-launch offline reliability.",
-  "start_url": "/launch",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#f7f9fc",

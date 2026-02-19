@@ -15,7 +15,7 @@
     <link rel="icon" type="image/svg+xml" href="/icons/app-icon.svg" />
     <script>
       (() => {
-        const cityMatch = window.location.pathname.match(/^\/city\/([a-z0-9-]+)$/i);
+        const cityMatch = window.location.pathname.match(/^\/city\/([a-z0-9-]+)\/?$/i);
         const manifestHref = cityMatch
           ? `/manifests/${cityMatch[1]}.webmanifest`
           : '/manifest.webmanifest';
