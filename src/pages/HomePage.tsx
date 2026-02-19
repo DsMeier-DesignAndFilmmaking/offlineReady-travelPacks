@@ -21,7 +21,7 @@ export const HomePage = (): JSX.Element => {
       <section className="hero-panel hero-panel--home">
         <div className="hero-panel__content">
           <p className="eyebrow">Offline-first Travel Intelligence</p>
-          <h1>Travel briefings designed for high-friction city arrivals</h1>
+          <h1>Travel briefings designed for high-friction city moments</h1>
           <p>
             Browse online, save a destination pack, then launch from home screen with mission-critical
             guidance available from first offline open.

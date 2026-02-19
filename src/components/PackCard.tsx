@@ -1,4 +1,3 @@
-import type { CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 import type { PackCatalogEntry } from '../types/travelPack';
 
@@ -9,12 +8,8 @@ interface PackCardProps {
 }
 
 export const PackCard = ({ pack, isDownloaded, isActive }: PackCardProps): JSX.Element => {
-  const style = {
-    '--pack-accent': pack.accent,
-  } as CSSProperties;
-
   return (
-    <article className="pack-card" style={style}>
+    <article className="pack-card">
       <div className="pack-card__visual" aria-hidden="true">
         <span className="pack-rank">#{pack.rank}</span>
         <span className="pack-arrivals">{pack.internationalArrivalsMillions.toFixed(1)}M arrivals</span>
