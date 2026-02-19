@@ -20,10 +20,13 @@ export const LaunchPage = (): JSX.Element => {
 
   return (
     <main className="app-shell compact-shell">
-      <p className="state-text">Preparing offline city pack...</p>
-      <p className="state-subtext">
-        If redirect does not complete, open a city pack from <Link to="/">the online catalog</Link> first.
-      </p>
+      <section className="hero-panel hero-panel--compact">
+        <p className="eyebrow">Offline Launcher</p>
+        <h1>Preparing your saved city pack</h1>
+        <p className="state-subtext">
+          If redirect does not complete, open a city pack from <Link to="/">the online catalog</Link> first.
+        </p>
+      </section>
     </main>
   );
 };

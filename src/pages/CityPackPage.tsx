@@ -36,7 +36,10 @@ export const CityPackPage = (): JSX.Element => {
   if (loading) {
     return (
       <main className="app-shell compact-shell">
-        <p className="state-text">Loading city pack...</p>
+        <section className="hero-panel hero-panel--compact">
+          <p className="eyebrow">City Pack</p>
+          <h1>Loading city pack...</h1>
+        </section>
       </main>
     );
   }
@@ -44,10 +47,13 @@ export const CityPackPage = (): JSX.Element => {
   if (notFound) {
     return (
       <main className="app-shell compact-shell">
-        <p className="state-text state-text--error">Pack not found.</p>
-        <Link className="btn" to="/">
-          Back to catalog
-        </Link>
+        <section className="hero-panel hero-panel--compact">
+          <p className="eyebrow">City Pack</p>
+          <h1>Pack not found</h1>
+          <Link className="btn" to="/">
+            Back to catalog
+          </Link>
+        </section>
       </main>
     );
   }
@@ -55,10 +61,14 @@ export const CityPackPage = (): JSX.Element => {
   if (error || !pack) {
     return (
       <main className="app-shell compact-shell">
-        <p className="state-text state-text--error">{error ?? 'Unable to load this pack.'}</p>
-        <Link className="btn" to="/">
-          Back to catalog
-        </Link>
+        <section className="hero-panel hero-panel--compact">
+          <p className="eyebrow">City Pack</p>
+          <h1>Unable to load this pack</h1>
+          <p className="state-text state-text--error">{error ?? 'Try opening the catalog and retrying.'}</p>
+          <Link className="btn" to="/">
+            Back to catalog
+          </Link>
+        </section>
       </main>
     );
   }
@@ -99,6 +109,14 @@ export const CityPackPage = (): JSX.Element => {
   };
 
   const canDownload = isOnline || isDownloaded;
+  const parsedUpdatedDate = new Date(pack.updatedAt);
+  const updatedLabel = Number.isNaN(parsedUpdatedDate.getTime())
+    ? pack.updatedAt
+    : new Intl.DateTimeFormat('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+      }).format(parsedUpdatedDate);
 
   return (
     <main className="app-shell city-shell">
@@ -109,34 +127,42 @@ export const CityPackPage = (): JSX.Element => {
       </div>
 
       <header className="hero-panel hero-panel--city">
-        <p className="eyebrow">
-          #{pack.rank} global arrivals • {pack.internationalArrivalsMillions.toFixed(1)}M annual visits
-        </p>
-        <h1>{pack.hero.title}</h1>
-        <p>{pack.hero.subtitle}</p>
+        <div className="hero-panel__content">
+          <p className="eyebrow">
+            #{pack.rank} global arrivals • {pack.internationalArrivalsMillions.toFixed(1)}M annual visits
+          </p>
+          <h1>{pack.hero.title}</h1>
+          <p>{pack.hero.subtitle}</p>
 
-        <div className="hero-panel__actions">
-          <button className="btn" disabled={!canDownload || downloadingSlug === pack.slug} onClick={handleDownload}>
-            {downloadingSlug === pack.slug ? 'Saving...' : 'Save Pack for Offline'}
-          </button>
+          <div className="hero-panel__meta">
+            <span className="hero-chip">{pack.country}</span>
+            <span className="hero-chip">Updated {updatedLabel}</span>
+            <span className="hero-chip">Version {pack.version}</span>
+          </div>
 
-          {isDownloaded && !isActive ? (
-            <button className="btn btn--secondary" onClick={handleSetActive}>
-              Set as Home Launch Pack
+          <div className="hero-panel__actions">
+            <button className="btn" disabled={!canDownload || downloadingSlug === pack.slug} onClick={handleDownload}>
+              {downloadingSlug === pack.slug ? 'Saving...' : 'Save Pack for Offline'}
             </button>
-          ) : null}
 
-          {isDownloaded ? (
-            <button className="btn btn--secondary" onClick={() => navigate('/launch')}>
-              Test Offline Launcher
-            </button>
-          ) : null}
+            {isDownloaded && !isActive ? (
+              <button className="btn btn--secondary" onClick={handleSetActive}>
+                Set as Home Launch Pack
+              </button>
+            ) : null}
 
-          {isDownloaded ? (
-            <button className="btn btn--install" onClick={handleInstall}>
-              {canInstall ? 'Add To Home Screen' : 'Install Instructions'}
-            </button>
-          ) : null}
+            {isDownloaded ? (
+              <button className="btn btn--secondary" onClick={() => navigate('/launch')}>
+                Test Offline Launcher
+              </button>
+            ) : null}
+
+            {isDownloaded ? (
+              <button className="btn btn--install" onClick={handleInstall}>
+                {canInstall ? 'Add To Home Screen' : 'Install Instructions'}
+              </button>
+            ) : null}
+          </div>
         </div>
       </header>
 
@@ -147,8 +173,12 @@ export const CityPackPage = (): JSX.Element => {
         </section>
       ) : null}
 
-      {offlineError ? <p className="state-text state-text--error">{offlineError}</p> : null}
-      {statusMessage ? <p className="state-text state-text--success">{statusMessage}</p> : null}
+      {offlineError || statusMessage ? (
+        <section className="status-stack">
+          {offlineError ? <p className="state-text state-text--error">{offlineError}</p> : null}
+          {statusMessage ? <p className="state-text state-text--success">{statusMessage}</p> : null}
+        </section>
+      ) : null}
 
       <section className="city-meta-grid">
         <article>

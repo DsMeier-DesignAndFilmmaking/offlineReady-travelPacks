@@ -10,25 +10,49 @@ export const HomePage = (): JSX.Element => {
   const { downloadedPacks, activePackSlug } = useOfflinePack();
 
   const sortedPacks = [...packs].sort((first, second) => first.rank - second.rank);
+  const downloadedCount = Object.keys(downloadedPacks).length;
+  const totalArrivals = sortedPacks.reduce(
+    (total, pack) => total + pack.internationalArrivalsMillions,
+    0,
+  );
 
   return (
     <main className="app-shell">
-      <section className="hero-panel">
-        <p className="eyebrow">Offline-first Travel Intelligence</p>
-        <h1>City packs for disruption-heavy travel days</h1>
-        <p>
-          Browse online, then save a city pack so it launches directly from home screen with
-          offline content available on first open.
-        </p>
+      <section className="hero-panel hero-panel--home">
+        <div className="hero-panel__content">
+          <p className="eyebrow">Offline-first Travel Intelligence</p>
+          <h1>Travel briefings designed for high-friction city arrivals</h1>
+          <p>
+            Browse online, save a destination pack, then launch from home screen with mission-critical
+            guidance available from first offline open.
+          </p>
 
-        <div className="hero-panel__actions">
-          <Link className="btn" to="/launch">
-            Open Offline Launcher
-          </Link>
-          <span className={`network-indicator ${isOnline ? 'is-online' : 'is-offline'}`}>
-            {isOnline ? 'Online catalog mode' : 'Offline mode: use launcher'}
-          </span>
+          <div className="hero-panel__actions">
+            <Link className="btn" to="/launch">
+              Open Offline Launcher
+            </Link>
+            <span className={`network-indicator ${isOnline ? 'is-online' : 'is-offline'}`}>
+              {isOnline ? 'Online catalog mode' : 'Offline mode: use launcher'}
+            </span>
+          </div>
         </div>
+
+        <aside className="hero-panel__stats" aria-label="Catalog highlights">
+          <article className="stat-card">
+            <span className="stat-card__value">{sortedPacks.length}</span>
+            <span className="stat-card__label">Global city packs</span>
+          </article>
+          <article className="stat-card">
+            <span className="stat-card__value">{totalArrivals.toFixed(1)}M</span>
+            <span className="stat-card__label">Combined annual arrivals</span>
+          </article>
+          <article className="stat-card">
+            <span className="stat-card__value">{downloadedCount}</span>
+            <span className="stat-card__label">
+              Saved offline{activePackSlug ? ` • ${activePackSlug}` : ''}
+            </span>
+          </article>
+        </aside>
       </section>
 
       {!isOnline ? (
@@ -41,8 +65,12 @@ export const HomePage = (): JSX.Element => {
       ) : null}
 
       <section className="section-head">
-        <h2>Top 10 most visited global cities</h2>
-        <p>Based on Euromonitor 2024 international arrivals dataset.</p>
+        <div>
+          <p className="eyebrow">Curated Catalog</p>
+          <h2>Top 10 most visited global cities</h2>
+          <p>Based on Euromonitor 2024 international arrivals dataset.</p>
+        </div>
+        <span className="section-chip">{isOnline ? 'Live online catalog' : 'Offline read-only catalog'}</span>
       </section>
 
       {loading ? <p className="state-text">Loading city packs...</p> : null}
