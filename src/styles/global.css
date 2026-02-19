@@ -54,6 +54,10 @@ a {
   width: min(980px, 92vw);
 }
 
+.page-nav-top {
+  margin-bottom: 0.9rem;
+}
+
 .hero-panel {
   padding: 2rem;
   background: linear-gradient(130deg, rgba(255, 250, 242, 0.96), rgba(241, 230, 211, 0.95));

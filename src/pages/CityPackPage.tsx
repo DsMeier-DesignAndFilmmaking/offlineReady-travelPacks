@@ -102,6 +102,12 @@ export const CityPackPage = (): JSX.Element => {
 
   return (
     <main className="app-shell city-shell">
+      <div className="page-nav-top">
+        <Link className="btn btn--secondary" to="/">
+          Back to Catalog
+        </Link>
+      </div>
+
       <header className="hero-panel hero-panel--city">
         <p className="eyebrow">
           #{pack.rank} global arrivals • {pack.internationalArrivalsMillions.toFixed(1)}M annual visits
