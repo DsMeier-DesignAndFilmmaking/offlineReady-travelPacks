@@ -13,7 +13,20 @@
     />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/icons/app-icon.svg" />
-    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+    <script>
+      (() => {
+        const cityMatch = window.location.pathname.match(/^\/city\/([a-z0-9-]+)$/i);
+        const manifestHref = cityMatch
+          ? `/manifests/${cityMatch[1]}.webmanifest`
+          : '/manifest.webmanifest';
+
+        const link = document.createElement('link');
+        link.setAttribute('rel', 'manifest');
+        link.setAttribute('href', manifestHref);
+        link.setAttribute('crossorigin', 'use-credentials');
+        document.head.appendChild(link);
+      })();
+    </script>
     <title>Offline Ready Travel Packs</title>
   </head>
   <body>

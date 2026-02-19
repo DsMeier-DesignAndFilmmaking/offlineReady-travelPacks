@@ -1,0 +1,25 @@
+{
+  "id": "/city/antalya",
+  "name": "Antalya Offline Travel Pack",
+  "short_name": "Antalya",
+  "description": "Offline-ready travel intelligence for Antalya.",
+  "start_url": "/city/antalya",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f9fc",
+  "theme_color": "#0f4c81",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "travel",
+    "navigation",
+    "lifestyle"
+  ]
+}

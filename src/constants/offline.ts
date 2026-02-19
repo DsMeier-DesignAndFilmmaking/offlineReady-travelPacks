@@ -1,6 +1,7 @@
 export const PACK_INDEX_URL = '/content/packs/index.json';
 
 export const buildPackUrl = (slug: string): string => `/content/packs/${slug}.json`;
+export const buildPackManifestUrl = (slug: string): string => `/manifests/${slug}.webmanifest`;
 
 export const ACTIVE_PACK_STORAGE_KEY = 'travelpacks.activePackSlug';
 export const DOWNLOADED_PACKS_STORAGE_KEY = 'travelpacks.downloadedPacks';

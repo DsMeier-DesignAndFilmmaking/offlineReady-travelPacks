@@ -4,7 +4,12 @@ import { clientsClaim } from 'workbox-core';
 import { cleanupOutdatedCaches, createHandlerBoundToURL, precacheAndRoute } from 'workbox-precaching';
 import { NavigationRoute, registerRoute } from 'workbox-routing';
 import { NetworkFirst, StaleWhileRevalidate } from 'workbox-strategies';
-import { MANDATORY_PACK_SLUGS, OFFLINE_LAUNCH_PATH, buildPackUrl } from './constants/offline';
+import {
+  MANDATORY_PACK_SLUGS,
+  OFFLINE_LAUNCH_PATH,
+  buildPackManifestUrl,
+  buildPackUrl,
+} from './constants/offline';
 import type {
   CachePackPayload,
   ServiceWorkerInboundMessage,
@@ -153,7 +158,7 @@ const cacheMandatoryPacks = async (): Promise<void> => {
       await cachePackAtomically({
         slug,
         version: 'bootstrap',
-        resources: [OFFLINE_LAUNCH_PATH, `/city/${slug}`, buildPackUrl(slug)],
+        resources: [OFFLINE_LAUNCH_PATH, buildPackManifestUrl(slug), `/city/${slug}`, buildPackUrl(slug)],
       });
     } catch (error) {
       console.warn(`Mandatory pack caching failed for ${slug}`, error);

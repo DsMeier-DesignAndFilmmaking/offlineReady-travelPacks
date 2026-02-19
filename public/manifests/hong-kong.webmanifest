@@ -1,0 +1,25 @@
+{
+  "id": "/city/hong-kong",
+  "name": "Hong Kong Offline Travel Pack",
+  "short_name": "Hong Kong",
+  "description": "Offline-ready travel intelligence for Hong Kong.",
+  "start_url": "/city/hong-kong",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f9fc",
+  "theme_color": "#0f4c81",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "travel",
+    "navigation",
+    "lifestyle"
+  ]
+}

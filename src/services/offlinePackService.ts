@@ -2,6 +2,7 @@ import {
   ACTIVE_PACK_STORAGE_KEY,
   DOWNLOADED_PACKS_STORAGE_KEY,
   OFFLINE_LAUNCH_PATH,
+  buildPackManifestUrl,
   buildPackUrl,
 } from '../constants/offline';
 import type { ServiceWorkerInboundMessage, ServiceWorkerOutboundMessage } from '../types/serviceWorker';
@@ -74,6 +75,7 @@ const buildOfflineResourceSet = (pack: CityPack): string[] => {
   const resources = new Set<string>([
     OFFLINE_LAUNCH_PATH,
     '/manifest.webmanifest',
+    buildPackManifestUrl(pack.slug),
     `/city/${pack.slug}`,
     buildPackUrl(pack.slug),
     ...pack.offlineResources,

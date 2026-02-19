@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { SectionBlock } from '../components/SectionBlock';
 import { useInstallPrompt } from '../hooks/useInstallPrompt';
@@ -23,6 +23,29 @@ export const CityPackPage = (): JSX.Element => {
   const { canInstall, promptInstall } = useInstallPrompt();
 
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!slug) {
+      return;
+    }
+
+    const manifestHref = `/manifests/${slug}.webmanifest`;
+    let manifestLink = document.querySelector('link[rel="manifest"]') as HTMLLinkElement | null;
+
+    if (!manifestLink) {
+      manifestLink = document.createElement('link');
+      manifestLink.setAttribute('rel', 'manifest');
+      document.head.appendChild(manifestLink);
+    }
+
+    manifestLink.setAttribute('href', manifestHref);
+    manifestLink.setAttribute('crossorigin', 'use-credentials');
+
+    return () => {
+      manifestLink?.setAttribute('href', '/manifest.webmanifest');
+      manifestLink?.setAttribute('crossorigin', 'use-credentials');
+    };
+  }, [slug]);
 
   const isDownloaded = useMemo(
     () => (pack ? Boolean(downloadedPacks[pack.slug]) : false),
